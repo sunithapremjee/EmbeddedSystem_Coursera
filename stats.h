@@ -23,20 +23,64 @@ analytics on the  maximum, minimum, mean,
 #ifndef __STATS_H__
 #define __STATS_H__
 
-/* Add Your Declarations and Function Comments here */ 
+
 
 /**
- * @brief <Add Brief Description of Function Here>
- *
- * <Add Extended Description Here>
- *
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- *
- * @return <Add Return Informaiton here>
+ * @brief <A function that prints the statistics of an array including minimum, maximum, mean, and median.>
+ * @param <test[]> <A unsigned char pointer to an n-element data array>
+ * @param <nSize> <An unsigned integer as the size of the array>
+ * @return <void>
  */
+void print_statistics( unsigned char test[], unsigned int nSize );
+
+/**
+ * @brief <Given an array of data and a length, prints the array to the screen.>
+ * @param <test[]> <A unsigned char pointer to an n-element data array>
+ * @param <nSize> <An unsigned integer as the size of the array>
+ * @return <void>
+ */
+void print_array( unsigned char test[], unsigned int nSize );
+
+/**
+ * @brief < Given an array of data and a length, returns the median value.>
+ * @param <test[]> <A unsigned char pointer to an n-element data array>
+ * @param <nSize> <An unsigned integer as the size of the array>
+ * @return <void> <Returns median>
+ */
+int find_median( unsigned char test[], unsigned int nSize );
+
+/**
+ * @brief <Given an array of data and a length, returns the mean>
+ * @param <test[]> <A unsigned char pointer to an n-element data array>
+ * @param <nSize> <An unsigned integer as the size of the array>
+ * @return <void> <Returns mean>
+ */
+int find_mean( unsigned char test[], unsigned int nSize );
+
+/**
+ * @brief < Given an array of data and a length, returns the maximum.>
+ * @param <test[]> <A unsigned char pointer to an n-element data array>
+ * @param <nSize> <An unsigned integer as the size of the array>
+ * @return <void> <Returns maximum value>
+ */
+int find_maximum( unsigned char test[], unsigned int nSize );
+
+/**
+ * @brief <Given an array of data and a length, returns the minimum>
+ * @param <test[]> <A unsigned char pointer to an n-element data array>
+ * @param <nSize> <An unsigned integer as the size of the array>
+ * @return <void> <Returns minimum value>
+ */
+int find_minimum( unsigned char test[], unsigned int nSize );
+
+/**
+ * @brief <Given an array of data and a length, sorts the array from largest to smallest.>
+ * @param <test[]> <A unsigned char pointer to an n-element data array>
+ * @param <nSize> <An unsigned integer as the size of the array>
+ * @return <int*> <Sorted array with zeroth Element as the largest value, and the last element (n-1) as the smallest value>
+ */
+int* sort_array( unsigned char test[], unsigned int nSize );
 
 
 #endif /* __STATS_H__ */
+
