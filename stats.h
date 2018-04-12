@@ -47,7 +47,7 @@ void print_array( unsigned char test[], unsigned int nSize );
  * @param <nSize> <An unsigned integer as the size of the array>
  * @return <void> <Returns median>
  */
-int find_median( unsigned char test[], unsigned int nSize );
+float find_median( unsigned char test[], unsigned int nSize );
 
 /**
  * @brief <Given an array of data and a length, returns the mean>
@@ -55,7 +55,7 @@ int find_median( unsigned char test[], unsigned int nSize );
  * @param <nSize> <An unsigned integer as the size of the array>
  * @return <void> <Returns mean>
  */
-int find_mean( unsigned char test[], unsigned int nSize );
+float find_mean( unsigned char test[], unsigned int nSize );
 
 /**
  * @brief < Given an array of data and a length, returns the maximum.>
@@ -79,7 +79,7 @@ int find_minimum( unsigned char test[], unsigned int nSize );
  * @param <nSize> <An unsigned integer as the size of the array>
  * @return <int*> <Sorted array with zeroth Element as the largest value, and the last element (n-1) as the smallest value>
  */
-int* sort_array( unsigned char test[], unsigned int nSize );
+unsigned char* sort_array( unsigned char test[], unsigned int nSize );
 
 
 #endif /* __STATS_H__ */
